@@ -5,11 +5,12 @@ import const
 import function
 import channel
 import data
+import os
 # インストールした discord.py を読み込む
 import discord
 
 # 自分のBotのアクセストークンに置き換えてください
-TOKEN = const.token
+TOKEN = os.environ['DISCORD_BOT_TOKEN']
 
 # 接続に必要なオブジェクトを生成
 client = discord.Client()
